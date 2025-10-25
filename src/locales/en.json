@@ -3,9 +3,10 @@
     "home": "Home",
     "awareness": "Awareness",
     "enroll": "Enroll",
-    "media": "Media",
-    "statistics": "Statistics",
-    "faq": "FAQ"
+    "compatibility": "Compatibility",
+    "locations": "Locations",
+    "testimonials": "Stories",
+    "contact": "Contact"
   },
   "hero": {
     "title": "Donate Blood, Save a Life",
@@ -120,5 +121,135 @@
     "contact": "Contact Us",
     "email": "contact@blooddonation.org",
     "phone": "+91 1234567890"
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "subtitle": "Have questions? We're here to help. Reach out to us anytime.",
+    "email": "Email",
+    "phone": "Phone",
+    "address": "Address",
+    "addressValue": "123 Blood Bank Road, Medical District, Mumbai - 400001",
+    "form": {
+      "name": "Full Name",
+      "namePlaceholder": "Enter your full name",
+      "email": "Email Address",
+      "emailPlaceholder": "Enter your email",
+      "subject": "Subject",
+      "subjectPlaceholder": "What is this about?",
+      "message": "Message",
+      "messagePlaceholder": "Tell us more...",
+      "submit": "Send Message",
+      "sending": "Sending..."
+    },
+    "successTitle": "Message Sent!",
+    "successMessage": "Thank you for reaching out. We'll get back to you soon.",
+    "errorTitle": "Validation Error",
+    "errors": {
+      "nameRequired": "Name is required",
+      "emailInvalid": "Please enter a valid email",
+      "subjectRequired": "Subject is required",
+      "messageMin": "Message must be at least 10 characters"
+    }
+  },
+  "testimonials": {
+    "title": "Donor Stories",
+    "subtitle": "Real stories from people whose lives have been touched by blood donation",
+    "donations": "donations",
+    "recipient": "Recipient",
+    "donor1": {
+      "name": "Dr. Rajesh Kumar",
+      "role": "Regular Donor",
+      "quote": "I've been donating blood for over 5 years now. It's the simplest way to save lives, and it costs nothing but a little time."
+    },
+    "donor2": {
+      "name": "Priya Sharma",
+      "role": "First-time Donor",
+      "quote": "I was nervous at first, but the staff made me so comfortable. Knowing my blood could save someone's life made it all worthwhile."
+    },
+    "donor3": {
+      "name": "Amit Patel",
+      "role": "College Student",
+      "quote": "Our college organized a blood donation camp. It felt amazing to contribute to society in such a meaningful way."
+    },
+    "recipient1": {
+      "name": "Sunita Verma",
+      "role": "Cancer Survivor",
+      "quote": "I received multiple blood transfusions during my treatment. Those donors gave me a second chance at life. I'm forever grateful."
+    },
+    "recipient2": {
+      "name": "The Mehta Family",
+      "role": "Accident Victim's Family",
+      "quote": "When our son met with an accident, blood donors literally saved his life. We can never thank them enough."
+    },
+    "donor4": {
+      "name": "Kavita Singh",
+      "role": "Teacher & Regular Donor",
+      "quote": "I donate every 3 months like clockwork. It's become a part of who I am - someone who gives back to the community."
+    },
+    "cta": {
+      "title": "Your Story Matters Too",
+      "description": "Every donor and recipient has a powerful story. Be part of this life-saving community."
+    }
+  },
+  "compatibility": {
+    "title": "Blood Type Compatibility",
+    "subtitle": "Understand which blood types can donate to and receive from each other",
+    "selectType": "Select Your Blood Type",
+    "canDonateTo": "Can Donate To",
+    "canReceiveFrom": "Can Receive From",
+    "universalDonor": {
+      "title": "Universal Donor",
+      "description": "O- blood type is the universal donor. People with O- blood can donate to anyone, making them critical in emergencies."
+    },
+    "universalRecipient": {
+      "title": "Universal Recipient",
+      "description": "AB+ blood type is the universal recipient. People with AB+ blood can receive from any blood type."
+    }
+  },
+  "locations": {
+    "title": "Find Blood Donation Centers",
+    "subtitle": "Locate the nearest blood donation center in your area",
+    "getDirections": "Get Directions",
+    "cities": {
+      "mumbai": "Mumbai",
+      "delhi": "Delhi",
+      "bangalore": "Bangalore",
+      "pune": "Pune",
+      "chennai": "Chennai",
+      "kolkata": "Kolkata"
+    },
+    "center1": {
+      "name": "Central Blood Bank Mumbai",
+      "address": "123 Medical Road, Fort, Mumbai - 400001"
+    },
+    "center2": {
+      "name": "All India Institute Blood Center",
+      "address": "456 Hospital Lane, New Delhi - 110029"
+    },
+    "center3": {
+      "name": "Victoria Hospital Blood Bank",
+      "address": "789 Health Street, Bangalore - 560002"
+    },
+    "center4": {
+      "name": "Ruby Hall Clinic Blood Bank",
+      "address": "321 Grant Road, Pune - 411001"
+    },
+    "center5": {
+      "name": "Apollo Hospital Blood Bank",
+      "address": "654 Health Avenue, Chennai - 600006"
+    },
+    "center6": {
+      "name": "AMRI Hospital Blood Center",
+      "address": "987 Medical District, Kolkata - 700029"
+    },
+    "hours": {
+      "weekdays": "Mon-Fri: 9:00 AM - 5:00 PM",
+      "allDays": "All Days: 8:00 AM - 8:00 PM"
+    },
+    "emergency": {
+      "title": "Need Blood Urgently?",
+      "description": "Call our 24/7 emergency helpline for immediate assistance",
+      "hotline": "24/7 Emergency Hotline"
+    }
   }
 }

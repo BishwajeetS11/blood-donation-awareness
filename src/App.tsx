@@ -12,6 +12,10 @@ import Enroll from "./pages/Enroll";
 import Media from "./pages/Media";
 import Statistics from "./pages/Statistics";
 import FAQ from "./pages/FAQ";
+import Contact from "./pages/Contact";
+import Testimonials from "./pages/Testimonials";
+import Compatibility from "./pages/Compatibility";
+import Locations from "./pages/Locations";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -30,6 +34,10 @@ const App = () => (
           <Route path="/media" element={<Media />} />
           <Route path="/statistics" element={<Statistics />} />
           <Route path="/faq" element={<FAQ />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/testimonials" element={<Testimonials />} />
+          <Route path="/compatibility" element={<Compatibility />} />
+          <Route path="/locations" element={<Locations />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />

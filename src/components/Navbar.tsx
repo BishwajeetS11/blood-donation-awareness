@@ -12,9 +12,10 @@ const Navbar = () => {
     { path: '/', label: t('nav.home') },
     { path: '/awareness', label: t('nav.awareness') },
     { path: '/enroll', label: t('nav.enroll') },
-    { path: '/media', label: t('nav.media') },
-    { path: '/statistics', label: t('nav.statistics') },
-    { path: '/faq', label: t('nav.faq') },
+    { path: '/compatibility', label: t('nav.compatibility') },
+    { path: '/locations', label: t('nav.locations') },
+    { path: '/testimonials', label: t('nav.testimonials') },
+    { path: '/contact', label: t('nav.contact') },
   ];
 
   return (
