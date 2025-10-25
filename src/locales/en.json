@@ -1,0 +1,124 @@
+{
+  "nav": {
+    "home": "Home",
+    "awareness": "Awareness",
+    "enroll": "Enroll",
+    "media": "Media",
+    "statistics": "Statistics",
+    "faq": "FAQ"
+  },
+  "hero": {
+    "title": "Donate Blood, Save a Life",
+    "subtitle": "Every donation can save up to three lives. Join our mission to make blood donation accessible to all.",
+    "cta": "Register as Donor",
+    "learn": "Learn More"
+  },
+  "awareness": {
+    "title": "Blood Donation Awareness",
+    "whoCanDonate": {
+      "title": "Who Can Donate",
+      "age": "Age between 18-65 years",
+      "weight": "Minimum weight of 50 kg",
+      "health": "Good general health",
+      "interval": "At least 3 months since last donation"
+    },
+    "process": {
+      "title": "The Donation Process",
+      "step1": "Registration and health screening",
+      "step2": "Blood collection (10-15 minutes)",
+      "step3": "Rest and refreshments",
+      "step4": "Return to normal activities"
+    },
+    "postCare": {
+      "title": "Post-Donation Care",
+      "tip1": "Rest for 10-15 minutes after donation",
+      "tip2": "Drink plenty of fluids",
+      "tip3": "Avoid heavy lifting for 24 hours",
+      "tip4": "Eat iron-rich foods"
+    }
+  },
+  "enroll": {
+    "title": "Register as Blood Donor",
+    "subtitle": "Join thousands of heroes saving lives",
+    "name": "Full Name",
+    "email": "Email Address",
+    "phone": "Phone Number",
+    "bloodType": "Blood Type",
+    "city": "City",
+    "submit": "Register Now",
+    "success": "Registration successful! We'll contact you soon.",
+    "selectBloodType": "Select blood type"
+  },
+  "media": {
+    "title": "Blood Donation Process",
+    "subtitle": "Watch how simple and safe blood donation is",
+    "description": "This video demonstrates the complete blood donation process, from registration to post-donation care."
+  },
+  "statistics": {
+    "title": "Impact of Blood Donation",
+    "subtitle": "Every donation makes a difference",
+    "stat1": {
+      "number": "1 in 7",
+      "text": "Patients entering hospitals need blood"
+    },
+    "stat2": {
+      "number": "Every 2 sec",
+      "text": "Someone needs blood"
+    },
+    "stat3": {
+      "number": "38%",
+      "text": "Of population eligible to donate"
+    },
+    "stat4": {
+      "number": "3 Lives",
+      "text": "Can be saved by one donation"
+    },
+    "thalassemia": "Patients with Thalassemia need regular blood transfusions",
+    "accident": "Accident victims may need up to 100 units of blood",
+    "surgery": "Complex surgeries require multiple blood units"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Find answers to common questions about blood donation",
+    "q1": {
+      "question": "How long does blood donation take?",
+      "answer": "The entire process takes about 45 minutes to an hour, including registration, health screening, and the actual donation. The blood collection itself only takes 10-15 minutes."
+    },
+    "q2": {
+      "question": "Is blood donation safe?",
+      "answer": "Yes, blood donation is completely safe. All needles and equipment are sterile, single-use, and disposed of after each donation. You cannot contract any disease by donating blood."
+    },
+    "q3": {
+      "question": "Will I feel weak after donating blood?",
+      "answer": "Most people feel fine after donating blood. Your body replaces the donated plasma within 24 hours and red blood cells within 4-6 weeks. We recommend resting for 10-15 minutes and drinking plenty of fluids."
+    },
+    "q4": {
+      "question": "How often can I donate blood?",
+      "answer": "You can donate whole blood every 3 months (12 weeks). For platelet donation, you can donate every 2 weeks. It's important to allow your body adequate time to replenish."
+    },
+    "q5": {
+      "question": "What should I do before donating blood?",
+      "answer": "Eat a healthy meal, drink plenty of water, get adequate sleep, and bring a valid ID. Avoid fatty foods before donation and inform staff of any medications you're taking."
+    },
+    "q6": {
+      "question": "Can I donate if I have a tattoo?",
+      "answer": "Yes, you can donate blood if you got a tattoo more than 3 months ago from a licensed facility. This waiting period helps ensure safety."
+    },
+    "q7": {
+      "question": "What happens to my donated blood?",
+      "answer": "Your donated blood is tested, processed, and separated into components (red cells, platelets, plasma). These components are then stored and distributed to hospitals where they save lives."
+    },
+    "q8": {
+      "question": "Can I donate if I'm taking medication?",
+      "answer": "It depends on the medication. Most common medications don't prevent donation, but some may require a waiting period. Please consult with our medical staff during screening."
+    },
+    "stillHaveQuestions": "Still have questions?",
+    "contactUs": "Feel free to contact us for more information about blood donation"
+  },
+  "footer": {
+    "tagline": "Together we can save lives",
+    "contact": "Contact Us",
+    "email": "contact@blooddonation.org",
+    "phone": "+91 1234567890"
+  }
+}
