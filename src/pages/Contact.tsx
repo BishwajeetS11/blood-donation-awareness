@@ -61,14 +61,14 @@ const Contact = () => {
     {
       icon: Mail,
       title: t('contact.email'),
-      value: 'contact@blooddonation.org',
-      href: 'mailto:contact@blooddonation.org',
+      value: 'janrakta@gmail.com',
+      href: 'mailto:janrakta@gmail.com',
     },
     {
       icon: Phone,
       title: t('contact.phone'),
-      value: '+91 1234567890',
-      href: 'tel:+911234567890',
+      value: t('footer.phone'),
+      href: 'tel:+02024449527',
     },
     {
       icon: MapPin,

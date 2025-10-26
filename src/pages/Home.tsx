@@ -8,21 +8,21 @@ const Home = () => {
   const { t } = useTranslation();
 
   const stats = [
-    { icon: Users, number: '500K+', text: 'Lives Saved', delay: '0s' },
-    { icon: Heart, number: '50K+', text: 'Active Donors', delay: '0.2s' },
-    { icon: Activity, number: '100+', text: 'Cities Covered', delay: '0.4s' },
+    { icon: Users, number: '500K+', text: t('home.stats.st1'), delay: '0s' },
+    { icon: Heart, number: '50K+', text: t('home.stats.st2'), delay: '0.2s' },
+    { icon: Activity, number: '100+', text: t('home.stats.st3'), delay: '0.4s' },
   ];
 
   return (
     <div className="min-h-screen">
       {/* Hero Section with Abstract Background */}
-      <section className="relative pt-32 pb-24 px-4 overflow-hidden">
+      <section className="relative pt-32 pb-23 px-4 overflow-hidden">
         {/* Abstract 3D Background */}
         <div className="absolute inset-0 z-0">
           <Scene3D />
         </div>
 
-        <div className="container mx-auto relative z-10">
+        <div className="container mx-auto relative z-10 pt-8 md:pt-12 lg:pt-16">
           <div className="max-w-4xl mx-auto text-center space-y-8">
             {/* Headline */}
             <div className="space-y-6">
@@ -37,7 +37,7 @@ const Home = () => {
             </div>
 
             {/* CTA Buttons */}
-            <div className="flex flex-wrap justify-center gap-4 animate-fade-up animation-delay-400">
+            <div className="flex flex-wrap justify-center gap-4 animate-fade-up animation-delay-300">
               <Link to="/enroll">
                 <Button 
                   size="lg" 
@@ -62,7 +62,7 @@ const Home = () => {
       </section>
 
       {/* Statistics Section */}
-      <section className="py-24 px-4 bg-white">
+      <section className="py-10 px-4 bg-white">
         <div className="container mx-auto max-w-6xl">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {stats.map((stat, index) => {
@@ -90,17 +90,17 @@ const Home = () => {
         <div className="container mx-auto max-w-4xl">
           <div className="bg-white rounded-3xl p-12 md:p-16 shadow-card text-center border border-slate-100">
             <h2 className="text-3xl md:text-5xl font-bold text-slate-900 mb-6">
-              Ready to make a difference?
+              {t('home.readyTitle')}
             </h2>
             <p className="text-xl text-slate-600 mb-8 max-w-2xl mx-auto">
-              Join thousands of donors who are saving lives every day. The process is simple, safe, and takes less than an hour.
+              {t('home.readySubtitle')}
             </p>
             <Link to="/enroll">
               <Button 
                 size="lg" 
                 className="rounded-full px-10 py-6 text-lg font-semibold shadow-elevated hover:shadow-elevated hover:-translate-y-1 transition-all duration-300"
               >
-                Become a Donor Today
+                {t('home.readyCta')}
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
             </Link>

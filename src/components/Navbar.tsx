@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { Droplet } from 'lucide-react';
 import LanguageSwitcher from './LanguageSwitcher';
 import { cn } from '@/lib/utils';
+import logo from './jkrp.jpg';
 
 const Navbar = () => {
   const { t } = useTranslation();
@@ -24,9 +25,13 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-20">
           <Link to="/" className="flex items-center gap-3 group">
             <div className="w-11 h-11 rounded-xl bg-primary flex items-center justify-center shadow-soft group-hover:shadow-card transition-all duration-300">
-              <Droplet className="w-6 h-6 text-white" fill="white" />
+              <img 
+                src={logo}
+                alt="BloodBank Logo" 
+                className="w-12 h-12 object-contain rounded-md"
+              />
             </div>
-            <span className="text-xl font-bold text-slate-900">BloodBank</span>
+            <span className="text-xl font-bold text-slate-900"><b>{t('nav.title')}</b></span>
           </Link>
 
           <div className="hidden md:flex items-center gap-10">

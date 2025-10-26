@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { Droplet, Mail, Phone } from 'lucide-react';
+import logo from './jkrp.jpg';
 
 const Footer = () => {
   const { t } = useTranslation();
@@ -10,10 +11,14 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
           <div>
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-11 h-11 rounded-xl bg-primary flex items-center justify-center shadow-soft">
-                <Droplet className="w-6 h-6 text-white" fill="white" />
-              </div>
-              <span className="text-xl font-bold text-slate-900">BloodBank</span>
+              <div className="w-11 h-11 rounded-xl bg-primary flex items-center justify-center shadow-soft group-hover:shadow-card transition-all duration-300">
+              <img 
+                src={logo}
+                alt="BloodBank Logo" 
+                className="w-12 h-12 object-contain rounded-md"
+              />
+            </div>
+            <span className="text-xl font-bold text-slate-900"><b>{t('nav.title')}</b></span>
             </div>
             <p className="text-slate-600 leading-relaxed max-w-sm">{t('footer.tagline')}</p>
           </div>
@@ -37,16 +42,16 @@ const Footer = () => {
           </div>
 
           <div>
-            <h3 className="font-semibold text-slate-900 mb-6">Quick Links</h3>
+            <h3 className="font-semibold text-slate-900 mb-6">{t('footer.quickLinks')}</h3>
             <div className="space-y-3">
               <a href="/awareness" className="block text-slate-600 hover:text-primary transition-colors">
-                Donation Information
+                {t('footer.donationInfo')}
               </a>
               <a href="/enroll" className="block text-slate-600 hover:text-primary transition-colors">
-                Become a Donor
+                {t('footer.becomeDonor')}
               </a>
               <a href="/statistics" className="block text-slate-600 hover:text-primary transition-colors">
-                Impact Statistics
+                {t('footer.impactStats')}
               </a>
             </div>
           </div>

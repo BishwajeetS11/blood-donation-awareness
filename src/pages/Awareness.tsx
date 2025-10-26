@@ -63,7 +63,7 @@ const Awareness = () => {
             {t('awareness.title')}
           </h1>
           <p className="text-xl text-slate-600">
-            Everything you need to know about blood donation - from eligibility to post-care
+            {t('awareness.subTitle')}
           </p>
         </div>
 
@@ -108,13 +108,16 @@ const Awareness = () => {
         <div className="mt-16 max-w-4xl mx-auto">
           <div className="bg-white rounded-2xl p-10 shadow-card border border-slate-100 animate-fade-up animation-delay-600">
             <h3 className="text-2xl font-bold text-slate-900 mb-4">
-              Why is blood donation important?
+              {t('awareness.whyImportant.title')}
             </h3>
             <p className="text-lg text-slate-600 leading-relaxed mb-4">
-              Blood donation is a simple act that can save lives. Every two seconds, someone in the world needs blood. Whether it's for emergency trauma care, surgery, cancer treatment, or chronic illnesses, donated blood is essential.
+              - {t('awareness.whyImportant.point1')}
+            </p>
+            <p className="text-lg text-slate-600 leading-relaxed mb-4">
+              - {t('awareness.whyImportant.point2')}
             </p>
             <p className="text-lg text-slate-600 leading-relaxed">
-              One donation can save up to three lives, and regular donations help maintain a stable blood supply for those in need.
+              - {t('awareness.whyImportant.point3')}
             </p>
           </div>
         </div>

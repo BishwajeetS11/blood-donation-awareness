@@ -22,11 +22,11 @@ const Enroll = () => {
   const bloodTypes = ['A+', 'A-', 'B+', 'B-', 'AB+', 'AB-', 'O+', 'O-'];
 
   const benefits = [
-    'Free health screening',
-    'Help save up to 3 lives',
-    'Donation certificate',
-    'Priority blood availability',
-  ];
+  t('enroll.b1'),
+  t('enroll.b2'),
+  t('enroll.b3'),
+  t('enroll.b4'),
+];
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -96,9 +96,9 @@ const Enroll = () => {
           <div className="lg:col-span-1 animate-scale-in">
             <Card className="bg-white border border-slate-100 shadow-card rounded-2xl sticky top-24">
               <CardHeader className="pb-6">
-                <CardTitle className="text-2xl text-slate-900">Donor Benefits</CardTitle>
+                <CardTitle className="text-2xl text-slate-900">{t('enroll.donorBenefits')}</CardTitle>
                 <CardDescription className="text-slate-600">
-                  What you'll receive as a registered donor
+                  {t('enroll.whatBenefits')}
                 </CardDescription>
               </CardHeader>
               <CardContent>

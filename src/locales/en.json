@@ -1,5 +1,6 @@
 {
   "nav": {
+    "title": "Jankalyan Blood Centre, Pune",
     "home": "Home",
     "awareness": "Awareness",
     "enroll": "Enroll",
@@ -7,6 +8,16 @@
     "locations": "Locations",
     "testimonials": "Stories",
     "contact": "Contact"
+  },
+  "home": {
+    "readyTitle": "Ready to make a difference?",
+    "readySubtitle": "Join thousands of donors who are saving lives every day. The process is simple, safe, and takes less than 1 hour.",
+    "readyCta": "Register as Donor",
+    "stats": {
+    "st1": "Lives Saved",
+    "st2": "Active Donors",
+    "st3": "Cities Covered"
+  }
   },
   "hero": {
     "title": "Donate Blood, Save a Life",
@@ -16,6 +27,7 @@
   },
   "awareness": {
     "title": "Blood Donation Awareness",
+    "subTitle": "Everything you need to know about blood donation - from eligibility to post-care",
     "whoCanDonate": {
       "title": "Who Can Donate",
       "age": "Age between 18-65 years",
@@ -36,6 +48,12 @@
       "tip2": "Drink plenty of fluids",
       "tip3": "Avoid heavy lifting for 24 hours",
       "tip4": "Eat iron-rich foods"
+    },
+    "whyImportant":{
+      "title": "Why blood donation is important?",
+      "point1": "Blood donation is a simple act that can save lives. Every 2 seconds, someone in the world needs blood.",
+      "point2": "Whether it's for emergency trauma care, surgery, cancer treatment, or chronic illnesses, donated blood is essential.",
+      "point3": "1 donation can save up to 3 lives, and regular donations help maintain a stable blood supply for those in need."
     }
   },
   "enroll": {
@@ -48,7 +66,13 @@
     "city": "City",
     "submit": "Register Now",
     "success": "Registration successful! We'll contact you soon.",
-    "selectBloodType": "Select blood type"
+    "selectBloodType": "Select blood type",
+    "donorBenefits": "Donor Benefits",
+    "whatBenefits": "What you'll receive as a registered donor",
+    "b1": "Free health screening",
+    "b2": "Help save up to 3 lives",
+    "b3": "Donation certificate",
+    "b4": "Prioroity blood availability for you and family"
   },
   "media": {
     "title": "Blood Donation Process",
@@ -119,8 +143,12 @@
   "footer": {
     "tagline": "Together we can save lives",
     "contact": "Contact Us",
-    "email": "contact@blooddonation.org",
-    "phone": "+91 1234567890"
+    "email": "janrakta@gmail.com",
+    "phone": "+020-2444 9527",
+    "quickLinks": "Quick Links",
+    "donationInfo": "Donation Information",
+    "becomeDonor": "Become a Donor",
+    "impactStats": "Impact Statistics"
   },
   "contact": {
     "title": "Get in Touch",
@@ -128,7 +156,7 @@
     "email": "Email",
     "phone": "Phone",
     "address": "Address",
-    "addressValue": "123 Blood Bank Road, Medical District, Mumbai - 400001",
+    "addressValue": "1003, Saras Baug Rd, near Hotel Natraj, Dadawadi, Shukrawar Peth, Pune, Maharashtra 411002",
     "form": {
       "name": "Full Name",
       "namePlaceholder": "Enter your full name",

@@ -128,11 +128,11 @@ const Locations = () => {
                 {t('locations.emergency.description')}
               </p>
               <a
-                href="tel:1800123456"
+                href="tel:+02024449527"
                 className="inline-flex items-center gap-2 text-2xl font-bold text-primary hover:text-primary-hover transition-colors"
               >
                 <Phone className="w-6 h-6" />
-                1800-123-456
+                {t('footer.phone')}
               </a>
             </CardContent>
           </Card>
