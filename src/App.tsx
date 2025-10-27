@@ -8,6 +8,9 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Awareness from "./pages/Awareness";
+import DonationWorkflow from "./pages/DonationWorkflow";
+import FacilitiesLabs from "./pages/FacilitiesLabs";
+import BloodDiseases from "./pages/BloodDiseases";
 import Enroll from "./pages/Enroll";
 import Media from "./pages/Media";
 import Statistics from "./pages/Statistics";
@@ -30,6 +33,9 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/awareness" element={<Awareness />} />
+          <Route path="/donation-workflow" element={<DonationWorkflow />} />
+          <Route path="/facilities-labs" element={<FacilitiesLabs />} />
+          <Route path="/blood-diseases" element={<BloodDiseases />} />
           <Route path="/enroll" element={<Enroll />} />
           <Route path="/media" element={<Media />} />
           <Route path="/statistics" element={<Statistics />} />

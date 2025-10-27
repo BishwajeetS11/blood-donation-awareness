@@ -1,9 +1,12 @@
 import { useTranslation } from 'react-i18next';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { CheckCircle, Heart, Shield, Activity } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+import { CheckCircle, Heart, Shield, Activity, ArrowRight, Microscope, BookOpen } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 const Awareness = () => {
   const { t } = useTranslation();
+  const navigate = useNavigate();
 
   const eligibilityItems = [
     t('awareness.whoCanDonate.age'),
@@ -98,6 +101,14 @@ const Awareness = () => {
                       </li>
                     ))}
                   </ul>
+                  {section.numbered && (
+                    <Button 
+                      onClick={() => navigate('/donation-workflow')}
+                      className="mt-6 w-full"
+                    >
+                      Know More <ArrowRight className="ml-2 w-4 h-4" />
+                    </Button>
+                  )}
                 </CardContent>
               </Card>
             );
@@ -119,6 +130,54 @@ const Awareness = () => {
             <p className="text-lg text-slate-600 leading-relaxed">
               - {t('awareness.whyImportant.point3')}
             </p>
+          </div>
+        </div>
+
+        {/* Explore More Section */}
+        <div className="mt-16">
+          <h2 className="text-3xl font-bold text-slate-900 text-center mb-12">
+            Explore More
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            <Card className="bg-white border border-slate-100 shadow-card hover:shadow-elevated transition-all duration-300">
+              <CardHeader>
+                <div className="w-14 h-14 rounded-2xl bg-blue-50 flex items-center justify-center mb-4">
+                  <Microscope className="w-7 h-7 text-blue-600" />
+                </div>
+                <CardTitle className="text-2xl text-slate-900">Facilities & Labs</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-slate-600 mb-6">
+                  Discover donation services and laboratory capabilities.
+                </p>
+                <Button 
+                  onClick={() => navigate('/facilities-labs')}
+                  className="w-full"
+                >
+                  Explore Facilities <ArrowRight className="ml-2 w-4 h-4" />
+                </Button>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-white border border-slate-100 shadow-card hover:shadow-elevated transition-all duration-300">
+              <CardHeader>
+                <div className="w-14 h-14 rounded-2xl bg-rose-50 flex items-center justify-center mb-4">
+                  <BookOpen className="w-7 h-7 text-primary" />
+                </div>
+                <CardTitle className="text-2xl text-slate-900">Blood-Related Diseases</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-slate-600 mb-6">
+                  Learn about Thalassemia and prevention.
+                </p>
+                <Button 
+                  onClick={() => navigate('/blood-diseases')}
+                  className="w-full"
+                >
+                  Learn More <ArrowRight className="ml-2 w-4 h-4" />
+                </Button>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </div>
