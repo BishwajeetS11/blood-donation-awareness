@@ -7,6 +7,8 @@ import { Textarea } from '@/components/ui/textarea';
 import { Mail, Phone, MapPin, Send } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 import { z } from 'zod';
+const BASE_API_URL = import.meta.env.VITE_BASE_API_URL || 'http://localhost:5000';
+
 
 const Contact = () => {
   const { t } = useTranslation();
@@ -37,7 +39,7 @@ const Contact = () => {
       
       // Simulate submission
 
-      const response = await fetch("http://localhost:5000/api/contact", {
+      const response = await fetch(`${BASE_API_URL}/api/contact`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),

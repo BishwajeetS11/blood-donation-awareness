@@ -7,6 +7,7 @@ import { Label } from '@/components/ui/label';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { useToast } from '@/hooks/use-toast';
 import { Heart, Check } from 'lucide-react';
+const BASE_API_URL = import.meta.env.VITE_BASE_API_URL || 'http://localhost:5000';
 
 const Enroll = () => {
   const { t } = useTranslation();
@@ -41,7 +42,7 @@ const Enroll = () => {
   }
 
   try {
-    const response = await fetch("http://localhost:5000/api/enroll", {
+    const response = await fetch(`${BASE_API_URL}/api/enroll`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(formData),
