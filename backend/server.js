@@ -13,7 +13,16 @@ const app = express();
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-app.use(cors());
+app.use(cors({
+  origin: [
+    "http://localhost:8080",            // Local frontend (Vite default)
+    process.env.FRONTEND_URL // Replace with your deployed frontend URL
+  ],
+  methods: ["GET", "POST"],
+  allowedHeaders: ["Content-Type"],
+  credentials: true
+}));
+
 app.use(express.json());
 
 // Rate Limiting to avoid spam bots
