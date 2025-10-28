@@ -65,7 +65,11 @@
     "bloodType": "Blood Type",
     "city": "City",
     "submit": "Register Now",
+    "successTitle": "Thank you for registering!",
     "success": "Registration successful! We'll contact you soon.",
+    "errorTitle": "Registration Failed",
+    "error": "There was an error submitting your registration. Please try again.",
+    "networkError": "Network error. Please check your connection and try again.",
     "selectBloodType": "Select blood type",
     "donorBenefits": "Donor Benefits",
     "whatBenefits": "What you'll receive as a registered donor",
@@ -171,12 +175,13 @@
     },
     "successTitle": "Message Sent!",
     "successMessage": "Thank you for reaching out. We'll get back to you soon.",
-    "errorTitle": "Validation Error",
+    "errorTitle": "Validation Error. Please contact us directly.",
     "errors": {
       "nameRequired": "Name is required",
       "emailInvalid": "Please enter a valid email",
       "subjectRequired": "Subject is required",
-      "messageMin": "Message must be at least 10 characters"
+      "messageMin": "Message must be at least 10 characters",
+      "sendFailed": "Failed to send message. Please try again later."
     }
   },
   "testimonials": {

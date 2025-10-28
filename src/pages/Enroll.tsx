@@ -28,52 +28,57 @@ const Enroll = () => {
   t('enroll.b4'),
 ];
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    
-    if (!formData.name || !formData.email || !formData.phone || !formData.bloodType || !formData.city) {
-      toast({
-        title: "Error",
-        description: "Please fill in all fields",
-        variant: "destructive",
-      });
-      return;
-    }
-
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(formData.email)) {
-      toast({
-        title: "Error",
-        description: "Please enter a valid email address",
-        variant: "destructive",
-      });
-      return;
-    }
-
-    const phoneRegex = /^\d{10}$/;
-    if (!phoneRegex.test(formData.phone.replace(/\D/g, ''))) {
-      toast({
-        title: "Error",
-        description: "Please enter a valid 10-digit phone number",
-        variant: "destructive",
-      });
-      return;
-    }
-
-    console.log('Form submitted:', formData);
+  const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+  
+  if (!formData.name || !formData.email || !formData.phone || !formData.bloodType || !formData.city) {
     toast({
-      title: "Success!",
-      description: t('enroll.success'),
+      title: "Error",
+      description: "Please fill in all fields",
+      variant: "destructive",
+    });
+    return;
+  }
+
+  try {
+    const response = await fetch("http://localhost:5000/api/enroll", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(formData),
     });
 
-    setFormData({
-      name: '',
-      email: '',
-      phone: '',
-      bloodType: '',
-      city: '',
+    const result = await response.json();
+
+    if (result.success) {
+      toast({
+        title: t('enroll.successTitle'),
+        description: t('enroll.success'),
+      });
+
+      setFormData({
+        name: '',
+        email: '',
+        phone: '',
+        bloodType: '',
+        city: '',
+      });
+    } else {
+      toast({
+        title: t('enroll.errorTitle'),
+        description: t('enroll.error'),
+        variant: "destructive",
+      });
+    }
+  } catch (err) {
+    toast({
+      title: t('enroll.errorTitle'),
+      description: t('enroll.networkError'),
+      variant: "destructive",
     });
-  };
+    console.log("Submission error:", err);
+  }
+};
+
 
   return (
     <div className="min-h-screen pt-32 pb-24 px-4">

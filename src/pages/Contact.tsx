@@ -36,22 +36,36 @@ const Contact = () => {
       contactSchema.parse(data);
       
       // Simulate submission
-      await new Promise(resolve => setTimeout(resolve, 1000));
-      
-      toast({
-        title: t('contact.successTitle'),
-        description: t('contact.successMessage'),
+
+      const response = await fetch("http://localhost:5000/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
       });
-      
-      (e.target as HTMLFormElement).reset();
-    } catch (error) {
-      if (error instanceof z.ZodError) {
+
+      const result = await response.json();
+
+      if (result.success) {
+        toast({
+          title: t('contact.successTitle'),
+          description: t('contact.successMessage'),
+        });
+        (e.target as HTMLFormElement).reset();
+      } else {
         toast({
           title: t('contact.errorTitle'),
-          description: error.errors[0].message,
+          description: t('contact.errors.sendFailed'),
           variant: 'destructive',
         });
       }
+    } catch (error) {
+      toast({
+        title: t('contact.errorTitle'),
+        description: error instanceof z.ZodError
+          ? error.errors[0].message
+          : t('contact.errors.sendFailed'),
+        variant: 'destructive',
+      });
     } finally {
       setIsSubmitting(false);
     }
