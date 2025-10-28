@@ -96,13 +96,11 @@ const Home = () => {
               {t('home.readySubtitle')}
             </p>
             <Link to="/enroll">
-              <Button 
-                size="lg" 
-                className="rounded-full px-10 py-6 text-lg font-semibold shadow-elevated hover:shadow-elevated hover:-translate-y-1 transition-all duration-300"
-              >
-                {t('home.readyCta')}
+            <Button size="lg" 
+                className="rounded-full px-6 py-4 text-base sm:px-10 sm:py-6 sm:text-lg font-semibold shadow-elevated hover:shadow-elevated hover:-translate-y-1 transition-all duration-300">
+                  {t('home.readyCta')}
                 <ArrowRight className="ml-2 w-5 h-5" />
-              </Button>
+            </Button>
             </Link>
           </div>
         </div>
