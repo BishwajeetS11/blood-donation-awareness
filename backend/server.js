@@ -13,13 +13,21 @@ const app = express();
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
+const allowedOrigins = [
+  "http://localhost:8080",
+  process.env.FRONTEND_URL
+];
+
 app.use(cors({
-  origin: [
-    "http://localhost:8080",            // Local frontend (Vite default)
-    process.env.FRONTEND_URL // Replace with your deployed frontend URL
-  ],
-  methods: ["GET", "POST"],
-  allowedHeaders: ["Content-Type"],
+  origin: function(origin, callback) {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, origin);
+    } else {
+      callback(new Error("CORS Not Allowed"));
+    }
+  },
+  methods: "GET,POST,OPTIONS",
+  allowedHeaders: "Content-Type",
   credentials: true
 }));
 
@@ -39,6 +47,7 @@ const HONEYPOT_FIELD = "website";
 // Nodemailer transporter
 const transporter = nodemailer.createTransport({
   service: "gmail",
+  secure: true,
   auth: {
     user: process.env.SENDER_EMAIL,
     pass: process.env.SENDER_PASSWORD
