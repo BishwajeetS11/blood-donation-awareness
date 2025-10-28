@@ -279,5 +279,278 @@
       "description": "Call our 24/7 emergency helpline for immediate assistance",
       "hotline": "24/7 Emergency Hotline"
     }
+  },
+  "donationWorkflow": {
+    "title": "Donation Workflow",
+    "subtitle": "Understanding the complete blood donation process from registration to component segregation",
+    "downloadGuidelines": "Download Donor Guidelines",
+    "stats": {
+      "donationTime": "Average Donation Time",
+      "donationTimeValue": "8-12 mins",
+      "bloodVolume": "Blood Volume Collected",
+      "bloodVolumeValue": "350-450 ml",
+      "livesSaved": "Lives Saved Per Donation",
+      "livesSavedValue": "Up to 3",
+      "recoveryTime": "Recovery Time",
+      "recoveryTimeValue": "24-48 hrs"
+    },
+    "beforeDonation": {
+      "title": "Before Donation",
+      "registration": {
+        "heading": "Registration and Donor History",
+        "text": "Prospective donors provide demographic information and complete a mandatory health questionnaire related to travel, medications, and medical history. This includes questions about recent illnesses, surgeries, vaccinations, and lifestyle factors that might affect blood safety."
+      },
+      "vitalCheck": {
+        "heading": "Vital Check and Screening",
+        "text": "Healthcare professionals measure blood pressure, hemoglobin levels (minimum 12.5 g/dL for women, 13.0 g/dL for men), weight (minimum 50 kg), pulse rate, and body temperature to confirm donor eligibility. This ensures the safety of both donor and recipient."
+      },
+      "counseling": {
+        "heading": "Counseling and Consent",
+        "text": "Donors receive official guidance about the process, benefits, and potential risks, followed by signed consent that authorizes the collection. Counselors explain the importance of honest disclosure and answer any questions about the donation process."
+      },
+      "instructions": {
+        "heading": "Pre-Donation Instructions",
+        "text": "Donors are advised to have had adequate sleep, eaten a healthy meal, and consumed plenty of fluids before donation. They should avoid fatty foods and alcohol 24 hours prior to donation for optimal blood quality."
+      }
+    },
+    "bloodDraw": {
+      "title": "Blood Draw",
+      "phlebotomy": {
+        "heading": "Phlebotomy Procedure",
+        "text": "A sterile needle is used to collect approximately 350 to 450 ml of whole blood under aseptic conditions. The collection site is thoroughly cleaned with antiseptic solution, and single-use sterile equipment ensures complete safety."
+      },
+      "duration": {
+        "heading": "Duration and Monitoring",
+        "text": "The process typically takes 8 to 12 minutes, with medical supervision throughout. Trained staff monitor donors for any signs of discomfort or adverse reactions. Donors can squeeze a stress ball to improve blood flow during collection."
+      },
+      "postCare": {
+        "heading": "Post-Donation Care",
+        "text": "Donors are offered fluids and rest briefly to prevent dizziness. They receive recommendations to avoid heavy exercise and alcohol for the next 24 hours. Refreshments are provided, and donors are monitored for 10-15 minutes before leaving."
+      },
+      "frequency": {
+        "heading": "Donation Frequency Guidelines",
+        "text": "Whole blood can be donated every 56 days, platelets every 7 days, and plasma every 28 days. Maintaining proper intervals ensures donor health and blood quality."
+      }
+    },
+    "testing": {
+      "title": "Testing and Quality Assurance",
+      "transfusionSafety": {
+        "heading": "Testing for Transfusion Safety",
+        "text": "Each unit undergoes screening for transmissible infections using advanced testing methods including ELISA and NAT (Nucleic Acid Testing). Tests include: HIV-1 and HIV-2, Hepatitis B (HBsAg) and Hepatitis C (Anti-HCV), Syphilis (VDRL/RPR), and Malaria. NAT testing can detect infections during the window period when antibodies are not yet detectable."
+      },
+      "bloodGrouping": {
+        "heading": "Blood Grouping and Cross-Matching",
+        "text": "Both ABO and Rh typing are performed using automated systems for accuracy. Compatibility testing ensures the safest match for the patient. Additional antibody screening is conducted to detect irregular antibodies that could cause transfusion reactions."
+      },
+      "qualityControl": {
+        "heading": "Quality Control Measures",
+        "text": "All testing equipment undergoes regular calibration and validation. Internal and external quality control samples are processed daily. Any reactive results are confirmed through repeat testing and alternative methods before deferring donors."
+      }
+    },
+    "componentSegregation": {
+      "title": "Component Segregation",
+      "separation": {
+        "heading": "Separation Techniques",
+        "text": "The collected blood is centrifuged using refrigerated centrifuges at controlled speeds and temperatures to isolate life-saving components: Packed Red Blood Cells (stored at 2-6°C for up to 35-42 days, used for trauma and anemia cases), Platelets (stored at 20-24°C with constant agitation for 5 days, critical for cancer therapy and bleeding disorders), Fresh Frozen Plasma (frozen at -30°C or below within 6-8 hours, essential for liver disease and surgeries, valid for 1 year), and Cryoprecipitate (rich in clotting factors, used to treat hemophilia and clotting issues)."
+      },
+      "leukoreduction": {
+        "heading": "Leukoreduction Process",
+        "text": "White blood cells are removed through filtration to reduce the risk of febrile reactions, CMV transmission, and HLA alloimmunization. This process improves transfusion safety and is especially important for immunocompromised patients."
+      },
+      "pathogenInactivation": {
+        "heading": "Pathogen Inactivation",
+        "text": "Advanced pathogen reduction technologies treat platelets and plasma to inactivate bacteria, viruses, and parasites while preserving therapeutic properties. This adds an extra layer of safety to the blood supply."
+      },
+      "outcome": {
+        "heading": "Outcome",
+        "text": "Through component therapy, a single donation can support up to three different patients, enhancing clinical impact. This approach maximizes the utility of each donation and ensures patients receive exactly what they need."
+      }
+    }
+  },
+  "facilities": {
+    "title": "Blood Bank Facilities & Labs",
+    "subtitle": "State-of-the-art infrastructure ensuring safe blood collection, testing, and storage",
+    "stats": {
+      "dailyCapacity": "Daily Collection Capacity",
+      "dailyCapacityValue": "500+ units",
+      "labs": "Specialized Laboratories",
+      "labsValue": "6 Labs",
+      "storage": "Storage Capacity",
+      "storageValue": "10,000+ units",
+      "staff": "Trained Medical Staff",
+      "staffValue": "50+ Professionals"
+    },
+    "collection": {
+      "title": "Blood Collection Facilities",
+      "description": "Comfortable donation chairs, sterile equipment, and professional phlebotomists ensure a safe and convenient donation experience.",
+      "details": "Our donor centers are equipped with ergonomic donation chairs, individual privacy screens, and entertainment systems. Each station has dedicated emergency equipment, and the entire facility maintains strict temperature and hygiene controls. Phlebotomists are certified professionals with continuous training in donor care and adverse event management."
+    },
+    "storage": {
+      "title": "Blood Storage & Preservation",
+      "description": "Temperature-controlled refrigerators and deep freezers ensure the correct storage conditions for all blood components.",
+      "rbc": "RBCs at 2–6°C",
+      "platelets": "Platelets at 20–24°C with constant agitation",
+      "plasma": "Plasma frozen at −30°C or below",
+      "details": "Our storage facilities include redundant cooling systems with 24/7 monitoring, backup power generators, and automated temperature logging. Each storage unit has alarm systems that alert staff to any temperature deviations. We maintain separate zones for quarantine, tested, and issued blood products to ensure traceability and prevent mix-ups."
+    },
+    "pathology": {
+      "title": "Pathology & Serology Laboratories",
+      "description": "Advanced analyzers conduct mandatory infectious disease screenings. Qualified lab technicians follow national and WHO safety standards.",
+      "details": "Our serology lab is equipped with state-of-the-art automated analyzers for rapid and accurate testing. We perform both ELISA and NAT testing for all transmissible diseases. The lab maintains ISO 15189 accreditation and participates in external quality assessment schemes to ensure accuracy. Trained microbiologists oversee all testing procedures and result validation."
+    },
+    "componentLab": {
+      "title": "Component Separation Laboratory",
+      "description": "Automated centrifugation systems and sterile transfer apparatus allow accurate separation of whole blood into components.",
+      "details": "The component lab operates under strict aseptic conditions with laminar flow hoods and HEPA-filtered environments. We use refrigerated high-speed centrifuges for optimal component separation. Automated blood processing systems ensure standardized procedures and reduce human error. All equipment undergoes regular calibration and maintenance."
+    },
+    "qualityControl": {
+      "title": "Quality Control & Hemovigilance Unit",
+      "description": "Routine quality assessments of each component. Traceability systems to monitor adverse reactions and maintain patient safety.",
+      "details": "Our quality unit performs daily quality control testing on all blood components including pH, glucose levels, and sterility checks. We maintain a comprehensive hemovigilance system that tracks all donations from donor to recipient. Any adverse reactions are investigated, documented, and reported to regulatory authorities. Regular audits ensure compliance with national blood transfusion guidelines."
+    },
+    "recovery": {
+      "title": "Donor Recovery & Counseling Room",
+      "description": "Donors relax after donation under supervision and receive post-care guidance. Counselors address concerns related to diet, lifestyle, and repeat donation.",
+      "details": "The recovery area provides a comfortable environment with refreshments, including juice, biscuits, and water. Donors are monitored for 10-15 minutes to ensure they feel well before leaving. Trained counselors are available to discuss any concerns and provide information about the donation process, what happens to donated blood, and when donors can give again. Emergency medical equipment and trained staff are always on standby."
+    },
+    "accreditation": {
+      "title": "Accreditation & Quality Standards",
+      "description": "Our facilities meet international standards for blood banking and laboratory operations.",
+      "certifications": "ISO 9001:2015, NABH Accreditation, NABL Certification",
+      "compliance": "FDA Guidelines, WHO Recommendations, National Blood Policy"
+    },
+    "additionalServices": {
+      "title": "Additional Services",
+      "mobileUnits": "Mobile Blood Collection Units",
+      "mobileUnitsDesc": "Fully equipped mobile units for on-site blood collection camps at organizations and communities",
+      "apheresis": "Apheresis Services",
+      "apheresisDesc": "Specialized equipment for collecting specific blood components like platelets and plasma",
+      "research": "Research & Training",
+      "researchDesc": "Continuous research in transfusion medicine and regular training programs for medical professionals"
+    }
+  },
+  "bloodDiseases": {
+    "title": "Blood Diseases Awareness",
+    "subtitle": "Understanding Thalassemia and other blood-related disorders",
+    "stats": {
+      "affected": "People Affected in India",
+      "affectedValue": "1 in 8",
+      "carriers": "Carriers Nationally",
+      "carriersValue": "42 Million+",
+      "newborns": "Annual Newborns with Major",
+      "newbornsValue": "10,000+",
+      "transfusions": "Lifetime Transfusions Needed",
+      "transfusionsValue": "100+"
+    },
+    "overview": {
+      "title": "Thalassemia: A Preventable Genetic Disorder",
+      "description": "Thalassemia is an inherited blood disease characterized by defective hemoglobin production, leading to severe anemia and organ complications."
+    },
+    "types": {
+      "title": "Types of Thalassemia",
+      "major": {
+        "title": "Thalassemia Major",
+        "description": "Symptoms appear early in childhood, requiring lifelong blood transfusions.",
+        "details": "Children with Thalassemia Major typically show symptoms within the first two years of life. They experience severe anemia, requiring blood transfusions every 2-3 weeks to maintain hemoglobin levels. Without regular transfusions, patients develop serious complications including bone deformities, enlarged spleen, and stunted growth. The condition requires comprehensive medical management including regular monitoring, iron chelation therapy, and potential bone marrow transplantation."
+      },
+      "minor": {
+        "title": "Thalassemia Minor (Trait)",
+        "description": "Individuals remain mostly asymptomatic but can pass the condition to children.",
+        "details": "Carriers of Thalassemia Minor lead normal, healthy lives with no symptoms or mild anemia. However, they carry one defective gene and can pass it to their children. If both parents are carriers, there's a 25% chance their child will have Thalassemia Major. Carrier detection through simple blood tests is crucial for family planning decisions."
+      }
+    },
+    "symptoms": {
+      "title": "Common Symptoms",
+      "items": [
+        "Paleness and chronic fatigue",
+        "Delayed physical growth and development",
+        "Bone deformities, especially in the face",
+        "Enlarged spleen (splenomegaly) and liver (hepatomegaly)",
+        "Jaundice and dark urine",
+        "Shortness of breath and rapid heartbeat"
+      ]
+    },
+    "diagnosis": {
+      "title": "Diagnosis & Screening",
+      "cbc": {
+        "title": "Complete Blood Count (CBC)",
+        "description": "Initial screening showing low hemoglobin and abnormal red blood cell indices"
+      },
+      "electrophoresis": {
+        "title": "Hemoglobin Electrophoresis",
+        "description": "Definitive test identifying abnormal hemoglobin patterns and confirming diagnosis"
+      },
+      "genetic": {
+        "title": "Genetic Carrier Testing",
+        "description": "Essential for couples planning marriage to assess risk of having affected children"
+      },
+      "prenatal": {
+        "title": "Prenatal Diagnosis",
+        "description": "Chorionic villus sampling or amniocentesis for high-risk pregnancies"
+      }
+    },
+    "treatment": {
+      "title": "Treatment Options",
+      "transfusions": {
+        "title": "Regular Blood Transfusions",
+        "description": "Every 2-4 weeks to maintain adequate hemoglobin levels and support normal growth"
+      },
+      "chelation": {
+        "title": "Iron Chelation Therapy",
+        "description": "Essential to prevent iron overload from frequent transfusions, which can damage organs"
+      },
+      "transplant": {
+        "title": "Bone Marrow Transplantation",
+        "description": "The only potential cure, most successful when done in childhood with matched sibling donors"
+      },
+      "folicAcid": {
+        "title": "Folic Acid Supplements",
+        "description": "Supports red blood cell production and overall health"
+      }
+    },
+    "prevention": {
+      "title": "Prevention & Early Detection",
+      "items": [
+        "Mandatory premarital screening in high-risk communities",
+        "Genetic counseling for carrier couples",
+        "Public awareness campaigns about carrier status",
+        "School and college screening programs",
+        "Family screening when one member is diagnosed"
+      ]
+    },
+    "resources": {
+      "title": "Knowledge Resources & Articles",
+      "myths": {
+        "title": "Myths vs. Facts",
+        "description": "Common misconceptions about hereditary blood disorders and the scientific truth behind them"
+      },
+      "detection": {
+        "title": "Carrier Detection Programs",
+        "description": "Importance of widespread screening programs in India to identify carriers before conception"
+      },
+      "policies": {
+        "title": "National Policies & Support",
+        "description": "Government initiatives, free treatment schemes, and support groups improving Thalassemia care in India"
+      },
+      "lifestyle": {
+        "title": "Living with Thalassemia",
+        "description": "Practical guides for patients and families on managing daily life, nutrition, and emotional well-being"
+      }
+    },
+    "caseStudies": {
+      "title": "Case Studies",
+      "lifetime": {
+        "title": "Lifetime Support Cases",
+        "description": "Children with Thalassemia Major who rely on consistent platelet and RBC transfusions every few weeks. These patients require comprehensive care coordination between blood banks, hospitals, and families to ensure uninterrupted transfusion schedules and proper iron management."
+      },
+      "awareness": {
+        "title": "Carrier Awareness Programs",
+        "description": "Communities implementing mandatory premarital screening have seen significant reduction in new Thalassemia Major cases. Success stories from regions where genetic counseling and education programs have reduced birth rates of affected children by up to 70%."
+      },
+      "transplant": {
+        "title": "Successful Bone Marrow Transplants",
+        "description": "Young patients who underwent successful BMT with matched sibling donors are now leading normal, transfusion-free lives. Early intervention and proper donor matching are key factors in successful outcomes."
+      }
+    }
   }
 }

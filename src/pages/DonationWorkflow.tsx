@@ -178,10 +178,10 @@ Contact your blood bank if you have any concerns.
         {/* Header */}
         <div className="text-center mb-12 max-w-4xl mx-auto animate-fade-up">
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 sm:mb-6 text-slate-900">
-            Donation Workflow
+            {t('donationWorkflow.title')}
           </h1>
           <p className="text-lg sm:text-xl text-slate-600 mb-6 px-4">
-            Understanding the complete blood donation process from registration to component segregation
+            {t('donationWorkflow.subtitle')}
           </p>
           <Button 
             onClick={handleDownloadGuidelines}

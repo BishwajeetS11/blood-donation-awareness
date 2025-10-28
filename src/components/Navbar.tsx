@@ -1,6 +1,7 @@
 import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { Droplet } from 'lucide-react';
+import { Droplet, Menu, X } from 'lucide-react';
+import { useState } from 'react';
 import LanguageSwitcher from './LanguageSwitcher';
 import { cn } from '@/lib/utils';
 import logo from './jkrp.jpg';
@@ -8,6 +9,7 @@ import logo from './jkrp.jpg';
 const Navbar = () => {
   const { t } = useTranslation();
   const location = useLocation();
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navLinks = [
     { path: '/', label: t('nav.home') },
@@ -31,9 +33,10 @@ const Navbar = () => {
                 className="w-12 h-12 object-contain rounded-md"
               />
             </div>
-            <span className="text-xl font-bold text-slate-900"><b>{t('nav.title')}</b></span>
+            <span className="text-xl font-bold text-slate-900 hidden sm:block"><b>{t('nav.title')}</b></span>
           </Link>
 
+          {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-10">
             {navLinks.map((link) => (
               <Link
@@ -54,8 +57,46 @@ const Navbar = () => {
             ))}
           </div>
 
-          <LanguageSwitcher />
+          {/* Desktop Language Switcher */}
+          <div className="hidden md:flex">
+            <LanguageSwitcher />
+          </div>
+
+          {/* Mobile Menu Button */}
+          <button
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            className="md:hidden p-2 text-slate-600 hover:text-slate-900 transition-colors"
+            aria-label="Toggle menu"
+          >
+            {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          </button>
         </div>
+
+        {/* Mobile Menu */}
+        {mobileMenuOpen && (
+          <div className="md:hidden py-4 border-t border-slate-200/60 bg-white/95 backdrop-blur-xl">
+            <div className="flex flex-col gap-4">
+              {navLinks.map((link) => (
+                <Link
+                  key={link.path}
+                  to={link.path}
+                  onClick={() => setMobileMenuOpen(false)}
+                  className={cn(
+                    "text-base font-medium transition-colors px-4 py-2 rounded-lg",
+                    location.pathname === link.path
+                      ? "text-primary bg-primary/10"
+                      : "text-slate-600 hover:text-slate-900 hover:bg-slate-50"
+                  )}
+                >
+                  {link.label}
+                </Link>
+              ))}
+              <div className="px-4 pt-2 border-t border-slate-200">
+                <LanguageSwitcher />
+              </div>
+            </div>
+          </div>
+        )}
       </div>
     </nav>
   );
